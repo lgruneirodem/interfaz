@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>962</width>
-    <height>688</height>
+    <width>966</width>
+    <height>695</height>
    </rect>
   </property>
   <property name="cursor">
@@ -21,22 +21,28 @@
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>0</y>
+      <y>-10</y>
       <width>791</width>
       <height>701</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+	background-color: rgb(255, 255, 255);
+
+}</string>
     </property>
     <widget class="QWidget" name="equipo_page">
      <property name="styleSheet">
       <string notr="true">background-color: #fff
 </string>
      </property>
-     <widget class="QFrame" name="frame_3">
+     <widget class="QFrame" name="saldoframe">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>50</x>
         <y>160</y>
-        <width>271</width>
+        <width>281</width>
         <height>81</height>
        </rect>
       </property>
@@ -79,7 +85,7 @@ QFrame:focus-within {
        <rect>
         <x>350</x>
         <y>160</y>
-        <width>341</width>
+        <width>351</width>
         <height>81</height>
        </rect>
       </property>
@@ -167,7 +173,7 @@ QFrame:focus-within {
        <rect>
         <x>230</x>
         <y>50</y>
-        <width>208</width>
+        <width>241</width>
         <height>49</height>
        </rect>
       </property>
@@ -182,16 +188,16 @@ QFrame:focus-within {
         <widget class="QLabel" name="bienvenido">
          <property name="font">
           <font>
-           <family>Neue Haas Grotesk Text Pro Medi</family>
-           <pointsize>10</pointsize>
-           <weight>7</weight>
+           <family>Century Gothic</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
            <italic>false</italic>
            <bold>false</bold>
           </font>
          </property>
          <property name="styleSheet">
           <string notr="true">QFrame{
-font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
+	font: 12pt &quot;Century Gothic&quot;;
 }</string>
          </property>
          <property name="text">
@@ -203,9 +209,17 @@ font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
         <widget class="QLabel" name="nombreUsuario">
          <property name="font">
           <font>
-           <family>Nirmala UI</family>
-           <pointsize>11</pointsize>
+           <family>Century Gothic</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
           </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+	font: 12pt &quot;Century Gothic&quot;;
+}</string>
          </property>
          <property name="text">
           <string>TextLabel</string>
@@ -216,13 +230,20 @@ font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
      </widget>
     </widget>
     <widget class="QWidget" name="predicciones_page">
-     <widget class="QFrame" name="frame_8">
+     <property name="styleSheet">
+      <string notr="true">Qframe{
+	background-color: rgb(255, 255, 255);
+
+
+}</string>
+     </property>
+     <widget class="QFrame" name="recomendacioframe">
       <property name="geometry">
        <rect>
-        <x>370</x>
+        <x>350</x>
         <y>180</y>
-        <width>341</width>
-        <height>81</height>
+        <width>371</width>
+        <height>241</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -259,13 +280,56 @@ QFrame:focus-within {
        <enum>QFrame::Raised</enum>
       </property>
      </widget>
-     <widget class="QFrame" name="frame_7">
+     <widget class="QFrame" name="mercadoframe">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>30</x>
         <y>180</y>
-        <width>271</width>
-        <height>81</height>
+        <width>281</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+border: 0.5px solid #000000;
+border-radius: 5px;
+
+
+}
+QFrame:hover {
+border:  0.5px solid #567CF0; 
+ }
+
+QFrame::hover {
+border: 0.5px solid #567CF0;    
+}
+
+                            
+QFrame:focus {
+border:  0.5px solid #567CF0;     
+ }
+
+QFrame:focus-within {
+ border: 0.5px solid #567CF0;
+}
+
+ QFrame {
+ box-shadow: 5px 5px 5px 5px #888888;}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QFrame" name="modeloframe">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>510</y>
+        <width>241</width>
+        <height>111</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -305,10 +369,10 @@ QFrame:focus-within {
      <widget class="QFrame" name="framebienvenido_2">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>70</y>
-        <width>208</width>
-        <height>49</height>
+        <x>30</x>
+        <y>30</y>
+        <width>601</width>
+        <height>61</height>
        </rect>
       </property>
       <property name="frameShape">
@@ -317,80 +381,38 @@ QFrame:focus-within {
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QLabel" name="bienvenido_3">
+        <widget class="QLabel" name="bienvenido_2">
          <property name="font">
           <font>
-           <family>Neue Haas Grotesk Text Pro Medi</family>
-           <pointsize>10</pointsize>
-           <weight>7</weight>
+           <family>Century Gothic</family>
+           <pointsize>18</pointsize>
+           <weight>75</weight>
            <italic>false</italic>
-           <bold>false</bold>
+           <bold>true</bold>
           </font>
          </property>
          <property name="styleSheet">
           <string notr="true">QFrame{
-font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
+	font: bold 18pt &quot;Century Gothic&quot;;
 }</string>
          </property>
          <property name="text">
-          <string>Bienvenido/a, </string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="nombreUsuario_3">
-         <property name="font">
-          <font>
-           <family>Nirmala UI</family>
-           <pointsize>11</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>TextLabel</string>
+          <string>Consigue los mejores jugadores para tu equipo</string>
          </property>
         </widget>
        </item>
       </layout>
      </widget>
-     <widget class="QFrame" name="frame_6">
+     <widget class="QFrame" name="frame">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>310</y>
-        <width>651</width>
-        <height>261</height>
+        <x>-10</x>
+        <y>10</y>
+        <width>761</width>
+        <height>701</height>
        </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QFrame{
-border: 0.5px solid #000000;
-border-radius: 5px;
-
-
-}
-QFrame:hover {
-border:  0.5px solid #567CF0; 
- }
-
-QFrame::hover {
-border: 0.5px solid #567CF0;    
-}
-
-                            
-QFrame:focus {
-border:  0.5px solid #567CF0;     
- }
-
-QFrame:focus-within {
- border: 0.5px solid #567CF0;
-}
-
- QFrame {
- box-shadow: 5px 5px 5px 5px #888888;
-
-}</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -398,7 +420,77 @@ QFrame:focus-within {
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
+      <widget class="QPushButton" name="scaperboton">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>120</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:  bold 10pt &quot;Century Gothic&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Cargar jugadores del mercado</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="algoritmobox">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>130</y>
+         <width>161</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:  bold 10pt &quot;Century Gothic&quot;;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Algoritmo 1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Algoritmo 2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Algoritmo 3</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="guardarmodeloBoton">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>550</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font:  bold 10pt &quot;Century Gothic&quot;;
+
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Guardar Modelo</string>
+       </property>
+      </widget>
      </widget>
+     <zorder>frame</zorder>
+     <zorder>recomendacioframe</zorder>
+     <zorder>mercadoframe</zorder>
+     <zorder>modeloframe</zorder>
+     <zorder>framebienvenido_2</zorder>
     </widget>
    </widget>
    <widget class="QFrame" name="subevntanas">
@@ -460,11 +552,10 @@ QFrame:focus-within {
         <widget class="QPushButton" name="botonequipo">
          <property name="styleSheet">
           <string notr="true">QPushButton{
-	font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
-	background-color: rgb(161, 170, 198);
-	border-radius: 10px;
-}
-</string>
+font: 11pt  &quot;Century Gothic&quot;;
+background-color: rgb(161, 170, 198);
+border-radius: 10px;
+}</string>
          </property>
          <property name="text">
           <string>TU EQUIPO</string>
@@ -475,7 +566,7 @@ QFrame:focus-within {
         <widget class="QPushButton" name="botonentrenamiento">
          <property name="styleSheet">
           <string notr="true">QPushButton{
-font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
+font: 11pt  &quot;Century Gothic&quot;;
 background-color: rgb(161, 170, 198);
 border-radius: 10px;
 }</string>
@@ -489,7 +580,7 @@ border-radius: 10px;
         <widget class="QPushButton" name="botonpredicciones">
          <property name="styleSheet">
           <string notr="true">QPushButton{
-font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
+font: 11pt  &quot;Century Gothic&quot;;
 background-color: rgb(161, 170, 198);
 border-radius: 10px;
 }</string>
@@ -577,11 +668,14 @@ font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
             <height>81</height>
            </rect>
           </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/logo_dla.qrc/interfaz/logo_dla-removebg-preview (3).png);</string>
+          </property>
           <property name="text">
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="../logo_dla.qrc">:/lodo_dla/foto/logo_dla-removebg-preview (3).png</pixmap>
+           <pixmap>:/lodo_dla/foto/logo_dla-removebg-preview (3).png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
