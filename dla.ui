@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>966</width>
-    <height>685</height>
+    <width>962</width>
+    <height>676</height>
    </rect>
   </property>
   <property name="cursor">
@@ -40,9 +40,9 @@
      <widget class="QFrame" name="frame_2">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>-20</x>
         <y>10</y>
-        <width>781</width>
+        <width>801</width>
         <height>701</height>
        </rect>
       </property>
@@ -50,7 +50,7 @@
        <string notr="true">background-color: rgb(225, 233, 243);</string>
       </property>
       <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
+       <enum>QFrame::NoFrame</enum>
       </property>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
@@ -178,10 +178,13 @@ QFrame:focus-within {
         <string notr="true">background-color: rgb(225, 233, 243);</string>
        </property>
        <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
+        <enum>QFrame::NoFrame</enum>
        </property>
        <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>0</number>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
@@ -278,7 +281,7 @@ QFrame:focus-within {
         <rect>
          <x>50</x>
          <y>130</y>
-         <width>113</width>
+         <width>141</width>
          <height>29</height>
         </rect>
        </property>
@@ -305,7 +308,7 @@ QFrame:focus-within {
         <rect>
          <x>360</x>
          <y>130</y>
-         <width>171</width>
+         <width>231</width>
          <height>29</height>
         </rect>
        </property>
@@ -332,7 +335,7 @@ QFrame:focus-within {
         <rect>
          <x>60</x>
          <y>290</y>
-         <width>113</width>
+         <width>161</width>
          <height>29</height>
         </rect>
        </property>
@@ -622,9 +625,9 @@ background-color: rgb(241, 243, 244);
       <widget class="QPushButton" name="guardarmodeloBoton">
        <property name="geometry">
         <rect>
-         <x>350</x>
+         <x>340</x>
          <y>500</y>
-         <width>131</width>
+         <width>141</width>
          <height>31</height>
         </rect>
        </property>
@@ -819,7 +822,7 @@ background-color: #c4dafa;
        </rect>
       </property>
       <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
+       <enum>QFrame::NoFrame</enum>
       </property>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
@@ -827,8 +830,11 @@ background-color: #c4dafa;
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QFrame" name="frametitulo">
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;</string>
+         </property>
          <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
+          <enum>QFrame::NoFrame</enum>
          </property>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
@@ -872,7 +878,7 @@ color: rgb(255, 255, 255);
        <item>
         <widget class="QFrame" name="framelogo">
          <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
+          <enum>QFrame::NoFrame</enum>
          </property>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
@@ -887,7 +893,8 @@ color: rgb(255, 255, 255);
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">image: url(:/logo_dla.qrc/interfaz/logo_dla-removebg-preview (3).png);</string>
+           <string notr="true">image: url(:/logo_dla.qrc/interfaz/logo_dla-removebg-preview (3).png);
+background-color: transparent;</string>
           </property>
           <property name="text">
            <string/>
